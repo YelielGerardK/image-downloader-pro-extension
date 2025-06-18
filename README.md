@@ -56,7 +56,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Rabenandrasana Yeliel Gerard - [@YelielGerardK](https://twitter.com/YelielGerardK)
 
-Project Link: [https://github.com/YelielGerardK/image-downloader-pro](https://github.com/YelielGerardK/image-downloader-pro)
+Project Link: [https://github.com/YelielGerardK/image-downloader-pro-extension](https://github.com/YelielGerardK/image-downloader-pro-extension)
 
 ## Acknowledgements
 
