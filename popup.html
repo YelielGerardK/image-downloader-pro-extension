@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Image Downloader Pro</h2>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Images detected:</span>
+                <span id="totalImages" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Selected:</span>
+                <span id="selectedImages" class="stat-value">0</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="scanBtn" class="btn btn-primary">
+                <span class="icon">🔍</span> Scan page
+            </button>
+            
+            <button id="viewBtn" class="btn btn-secondary">
+                <span class="icon">👁️</span> View images
+            </button>
+
+            <button id="selectAllBtn" class="btn btn-info">
+                <span class="icon">☑️</span> Select all
+            </button>
+
+            <button id="downloadBtn" class="btn btn-success">
+                <span class="icon">📥</span> Download (<span id="downloadCount">0</span>)
+            </button>
+        </div>
+
+        <div class="options">
+            <label class="checkbox">
+                <input type="checkbox" id="includeBackground" checked>
+                <span>Include background images</span>
+            </label>
+            
+            <label class="checkbox">
+                <input type="checkbox" id="autoDetect" checked>
+                <span>Auto-detect</span>
+            </label>
+        </div>
+
+        <div class="filters">
+            <h3>Filters</h3>
+            <label>
+                Minimum size:
+                <input type="number" id="minWidth" placeholder="Width" value="10">
+                x
+                <input type="number" id="minHeight" placeholder="Height" value="10">
+            </label>
+            
+            <label>
+                Image types:
+                <select id="imageTypes" multiple>
+                    <option value="jpg" selected>JPG/JPEG</option>
+                    <option value="png" selected>PNG</option>
+                    <option value="gif" selected>GIF</option>
+                    <option value="webp" selected>WebP</option>
+                    <option value="svg" selected>SVG</option>
+                </select>
+            </label>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
